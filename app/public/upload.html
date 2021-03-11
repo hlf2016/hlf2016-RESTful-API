@@ -1,0 +1,11 @@
+<html>
+    <form action="/upload" method="POST" enctype="multipart/form-data" >
+        <!-- 只接受 image/png, image/jpeg, image/jpg 三种格式文件的写法-->
+        <!-- <input type="file" name="file" accept="image/png, image/jpeg, image/jpg"> -->
+        <!-- <input type="file" name="file" accept=".png, .jpeg, .jpg"/> -->
+
+        <!-- 接收所有image类型 -->
+        <input type="file" name="file" accept="image/*"/>
+        <input type="submit"/>
+    </form>
+</html>
