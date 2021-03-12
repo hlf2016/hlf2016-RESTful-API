@@ -124,7 +124,7 @@ class UserController {
             currentUser.save();
         }
         // 表示操作成功但是无数据返回
-        ctx.body = 204;
+        ctx.status = 204;
     }
 
     // 取消关注用户
@@ -139,7 +139,7 @@ class UserController {
             currentUser.save();
         }
         // 表示操作成功但是无数据返回
-        ctx.body = 204;
+        ctx.status = 204;
     }
 
     // 点赞的答案列表
