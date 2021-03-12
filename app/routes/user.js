@@ -30,7 +30,7 @@ router.get('/:id/followers', listFollowers);
 // 关注用户
 router.put('/follow/:id', auth, checkUserExists, follow);
 // 取关
-router.put('/unfollow/:id', auth, checkUserExists, unfollow);
+router.delete('/unfollow/:id', auth, checkUserExists, unfollow);
 
 // 赞答案
 router.get('/:id/likeanswers', listLikingAnswers);
